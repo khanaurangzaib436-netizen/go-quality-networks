@@ -1,6 +1,10 @@
 # Telecom Website – Go Quality Networks
 
-Frontend implementation of a professional telecom service provider website built for **Go Quality Networks**.
+Professional telecom service provider website built for **Go Quality Networks** based in Houston, TX
+
+## Live Website
+
+https://go-quality-networks.com
 
 ## Overview
 
@@ -32,10 +36,6 @@ The website is built to reflect a real-world ISP business, showcasing services, 
 - Clean frontend structure and styling consistency
 - Practical use of Tailwind CSS in production layouts
 - Experience deploying and maintaining live client-facing websites
-
-## Live Website
-
-https://go-quality-networks.com
 
 ## Notes
 
