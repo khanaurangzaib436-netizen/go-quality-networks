@@ -82,7 +82,7 @@ const ContactForm = () => {
       toast({
         title: "🚧 EmailJS Not Configured",
         description:
-          "There is a problem in our server. Please contact support directly through number 713-382-9770.",
+          "There is a problem in our server. Please contact support directly through number +1 (713) 253-0578",
         variant: "destructive",
         duration: 7000,
       });

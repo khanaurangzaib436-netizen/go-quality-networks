@@ -403,7 +403,7 @@ const Privacy = () => {
                         href="tel:+13467927838"
                         className="text-primary hover:underline"
                       >
-                        713-382-9770
+                        +1 (713) 253-0578
                       </a>{" "}
                       (Select option for Privacy Office)
                     </span>
@@ -418,7 +418,7 @@ const Privacy = () => {
                       Go Quality Networks Office
                       <br />
                       <br />
-                      5922 Clerkenwell Dr Houston TX 77084
+                      1130 west Dallas st, Conroe, Tx.
                     </span>
                   </div>
                 </div>
