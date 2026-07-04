@@ -6,7 +6,7 @@ import { Phone, Mail, MapPin, Clock, MessageSquare } from 'lucide-react';
 const ContactInfo = () => {
   const contactDetails = [
     { icon: Phone, label: 'Customer Support', value: '+1 (713) 253-0578', href: '+1 (713) 253-0578' },
-    { icon: Mail, label: 'General Inquiries', value: 'shahbazbaig74@gmail.com ', href: 'mailto:shahbazbaig74@gmail.com ' },
+    { icon: Mail, label: 'General Inquiries', value: 'goqualitynetworks@gmail.com ', href: 'mailto:goqualitynetworks@gmail.com ' },
     { icon: MessageSquare, label: 'Support Email', value: 'goqualitynetworks@gmail.com', href: 'mailto:goqualitynetworks@gmail.com' },
     { icon: MapPin, label: 'Corporate Office', value: '1130 west Dallas st, Conroe, Tx.' },
   ];
