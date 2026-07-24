@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import { Zap, ArrowRight, CheckCircle, Search, Compass } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useToast } from '@/components/ui/use-toast';
-import heroImg from '../../assets/hero.png'; // Adjust the path as necessary
+import heroImg from '../../assets/hero1.jpg'; // Adjust the path as necessary
 const HeroSection = () => {
   const { toast } = useToast();
 
@@ -103,14 +103,13 @@ const HeroSection = () => {
               <Button
                 onClick={handleFindProviders}
                 size="lg"
-                className="bg-gradient-to-r from-primary to-accent hover:shadow-xl hover:shadow-primary/30 text-primary-foreground font-semibold px-7 py-3 sm:px-8 sm:py-3.5 rounded-full text-base sm:text-lg transition-all duration-300 hover:scale-105 shadow-md"
+                className="bg-gradient-to-r from-primary to-accent hover:shadow-xl hover:shadow-primary/30 text-primary-foreground font-semibold px-7 py-3 sm:px-8 sm:py-3.5 rounded-full text-base sm:text-lg transition-all duration-300 shadow-md"
               >
                 Find Providers Near You
                 <Search className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
               </Button>
               <Link to={"/contact"}>
               <Button
-                // onClick={handleLearnMore}
                 variant="outline"
                 size="lg"
                 className="border-border text-muted-foreground hover:text-primary hover:border-primary hover:bg-primary/5 px-7 py-3 sm:px-8 sm:py-3.5 rounded-full text-base sm:text-lg transition-all duration-300 w-full sm:w-auto shadow-sm hover:show-md"
@@ -131,7 +130,7 @@ const HeroSection = () => {
             <div className="relative w-full max-w-md xl:max-w-lg h-auto aspect-[5/4] group">
               <div className="absolute -inset-3 bg-gradient-to-br from-primary/50 to-accent/50 rounded-3xl opacity-15 group-hover:opacity-25 transition-opacity duration-500 blur-2xl animate-pulse-glow"></div>
               <img 
-                className="relative w-full h-full object-cover rounded-2xl shadow-2xl transform group-hover:scale-[1.03] transition-transform duration-500 border-2 border-border/10"
+                className="relative w-full h-full object-cover rounded-2xl shadow-2xl transform  transition-transform duration-500 border-2 border-border/10"
                 alt="Illustration of a diverse group of people happily using laptops and tablets, with network connection lines in the background, symbolizing informed telecom choices."
                 src={heroImg} />
               

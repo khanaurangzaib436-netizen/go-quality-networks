@@ -5,38 +5,9 @@ import { Link } from 'react-router-dom';
 import { Users, Award, Compass, Lightbulb, Target, Brain, HeartHandshake as Handshake, Users2, Heart } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useToast } from '@/components/ui/use-toast';
-
+import aboutImage from '../assets/hero2.jpg';
 const About = () => {
   const { toast } = useToast();
-
-  // const handleJoinTeam = () => {
-  //   toast({
-  //     title: "💼 Join Our Team",
-  //     description: "🚧 This feature isn't implemented yet—but don't worry! You can request it in your next prompt! 🚀"
-  //   });
-  // };
-
-  // const teamMembers = [
-  //   {
-  //     name: 'Alice Johnson',
-  //     role: 'Founder & CEO',
-  //     bio: 'Alice leads Go Quality Networks with a passion for empowering consumers with clear, actionable telecom information.',
-  //     imageAlt: 'Professional headshot of Alice Johnson, a confident female CEO.'
-  //   },
-  //   {
-  //     name: 'Robert Chen',
-  //     role: 'Head of Research & Data',
-  //     bio: 'Robert ensures our data is accurate and our comparison tools are cutting-edge, providing users the best insights.',
-  //     imageAlt: 'Professional headshot of Robert Chen, a male data expert.'
-  //   },
-  //   {
-  //     name: 'Maria Garcia',
-  //     role: 'Director of User Advocacy',
-  //     bio: 'Maria champions the user experience, ensuring our platform is intuitive and truly helpful for everyone.',
-  //     imageAlt: 'Professional headshot of Maria Garcia, a friendly female advocate.'
-  //   }
-  // ];
-
   const values = [
     {
       icon: Target,
@@ -126,7 +97,7 @@ const About = () => {
                 <img 
                   alt="A diverse group of people collaboratively looking at a large screen displaying comparison charts and service options, symbolizing teamwork and informed choices."
                   className="w-full h-auto object-cover rounded-xl aspect-[16/10]"
-                  src="https://images.unsplash.com/photo-1598971579229-02df97aec5d2" />
+                  src={aboutImage} />
               </div>
             </motion.div>
           </div>
@@ -173,76 +144,6 @@ const About = () => {
           </div>
         </div>
       </section>
-
-      {/* <section className="py-16 md:py-20 bg-background">
-        <div className="container mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.2 }}
-            transition={{ duration: 0.7, ease: "easeOut" }}
-            className="text-center mb-12 md:mb-16"
-          >
-             <div className="inline-block p-2.5 bg-primary/10 rounded-xl mb-4">
-              <Users2 className="w-8 h-8 md:w-10 md:h-10 text-primary" />
-            </div>
-            <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-foreground">
-              Meet Our Team
-            </h2>
-            <p className="text-base sm:text-lg text-muted-foreground max-w-xl mx-auto">
-              The dedicated professionals helping you make smarter telecom choices.
-            </p>
-          </motion.div>
-
-          <div className="grid md:grid-cols-3 gap-6 md:gap-8 max-w-5xl mx-auto">
-            {teamMembers.map((member, index) => (
-              <motion.div
-                key={member.name}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.3 }}
-                transition={{ duration: 0.5, delay: index * 0.15, ease: "easeOut" }}
-                className="bg-card rounded-xl p-6 text-center shadow-card-hover dark:shadow-card-hover-dark hover:shadow-lg dark:hover:shadow-primary/20 transition-all duration-300 flex flex-col items-center"
-              >
-                <img 
-                  alt={member.imageAlt}
-                  className="w-28 h-28 rounded-full mx-auto mb-5 object-cover shadow-lg border-2 border-primary/20"
-                  src="https://images.unsplash.com/photo-1635185481431-661b09594e6c" />
-                <h3 className="text-lg font-bold text-foreground mb-0.5">{member.name}</h3>
-                <p className="text-primary text-sm font-semibold mb-2.5">{member.role}</p>
-                <p className="text-xs text-muted-foreground leading-relaxed flex-grow">{member.bio}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section> */}
-      
-      {/* <section className="py-20 md:py-24 bg-gradient-to-br from-primary to-accent text-primary-foreground">
-        <div className="container mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.3 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-            className="max-w-2xl mx-auto text-center"
-          >
-            <Heart className="w-12 h-12 md:w-14 md:h-14 mx-auto mb-5 opacity-80" />
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold mb-6 tracking-tight">
-              Want to Help Others Choose Wisely?
-            </h2>
-            <p className="text-base sm:text-lg opacity-90 mb-8 max-w-xl mx-auto leading-relaxed">
-              We're always looking for passionate individuals to contribute to our mission of empowering consumers.
-            </p>
-            <Button
-              // onClick={handleJoinTeam}
-              size="lg"
-              className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 font-bold px-8 py-3 rounded-full text-base shadow-xl transition-all duration-300 hover:scale-105 transform"
-            >
-              Explore Opportunities
-            </Button>
-          </motion.div>
-        </div>
-      </section> */}
     </div>
   );
 };

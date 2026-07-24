@@ -2,7 +2,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { CheckSquare, Users, Award, Compass, MessageSquare, Lightbulb } from 'lucide-react';
-import WhyChooseUsImg from '../../assets/WhyChooseUs.png';
+import WhyChooseUsImg from '../../assets/hero3.jpg';
 
 const WhyChooseUsSection = () => {
   const reasons = [
