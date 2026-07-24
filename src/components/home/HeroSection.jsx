@@ -100,19 +100,11 @@ const HeroSection = () => {
               transition={{ delay: 0.8, duration: 0.5 }}
               className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start pt-5"
             >
+              <Link to={"/contact"}>
               <Button
                 onClick={handleFindProviders}
                 size="lg"
                 className="bg-gradient-to-r from-primary to-accent hover:shadow-xl hover:shadow-primary/30 text-primary-foreground font-semibold px-7 py-3 sm:px-8 sm:py-3.5 rounded-full text-base sm:text-lg transition-all duration-300 shadow-md"
-              >
-                Find Providers Near You
-                <Search className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
-              </Button>
-              <Link to={"/contact"}>
-              <Button
-                variant="outline"
-                size="lg"
-                className="border-border text-muted-foreground hover:text-primary hover:border-primary hover:bg-primary/5 px-7 py-3 sm:px-8 sm:py-3.5 rounded-full text-base sm:text-lg transition-all duration-300 w-full sm:w-auto shadow-sm hover:show-md"
               >
                 Get a Quote
                 <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
